@@ -1,0 +1,50 @@
+pipeline
+{
+agent any
+stages
+{
+stage('clone')
+{
+steps{
+git 'https://github.com/SuryaSMP/surya_rep/new/main'
+}
+}
+stage('build')
+{
+steps{
+sh 'javac hello.java'
+}
+}
+stage('run')pipeline
+{
+agent any
+stages
+{
+stage('clone')
+{
+steps{
+git 'https://github.com/SuryaSMP/surya_rep/new/main'
+}
+}
+stage('build')
+{
+steps{
+sh 'javac hello.java'
+}
+}
+stage('run')
+{
+steps
+{
+sh 'java hello'
+}
+}
+}
+{
+steps
+{
+sh 'java hello'
+}
+}
+}
+
