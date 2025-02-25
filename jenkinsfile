@@ -46,5 +46,3 @@ steps
 sh 'java hello'
 }
 }
-}
-
